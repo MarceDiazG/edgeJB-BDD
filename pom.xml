@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jbehave.tutorials</groupId>
+  <groupId>FunctionalTest</groupId>
   <artifactId>storiesInBDDcontext</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Edgeunity</name>
@@ -18,7 +18,7 @@
     <meta.filter></meta.filter>
     <threads>10</threads>
     <skip>false</skip>
-    <stories>**/EtsyDotComStories.java</stories>
+    <stories>**/EdgeStories.java</stories>
   </properties>
 
   <dependencyManagement>
@@ -291,7 +291,7 @@
     <profile>
       <id>annotated-embedder</id>
       <properties>
-        <stories>**/AnnotatedEtsyDotComStories.java</stories>
+        <stories>**/AnnotatedEdgeStories.java</stories>
       </properties>
       <build>
         <plugins>

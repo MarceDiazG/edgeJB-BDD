@@ -7,7 +7,7 @@
   <bean id="driverProvider" class="org.jbehave.web.selenium.FirefoxWebDriverProvider" >
   </bean>
 
-  <bean id="webDriverProvider" class="org.jbehave.web.selenium.PerStoryWebDriverSteps">
+  <bean id="webDriverProvider" class="steps.commonSteps">
     <constructor-arg ref="driverProvider"/>
   </bean>
 
